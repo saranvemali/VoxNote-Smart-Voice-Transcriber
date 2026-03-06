@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>VoxNote — Smart Voice Transcriber</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- PDF -->
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+
+<!-- Canvas -->
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="app">
+
+<h1>VoxNote</h1>
+<p class="tagline">Speak naturally. Capture instantly.</p>
+
+<p id="status">Click Start to begin</p>
+
+<div class="mic-section">
+
+<div class="mic-glow"></div>
+
+<button id="startBtn" class="mic-btn">🎤</button>
+
+<button id="stopBtn" class="stop-btn">Stop</button>
+
+</div>
+
+<div class="output" id="capture">
+
+<p id="transcript">Your speech will appear here...</p>
+
+</div>
+
+<div class="actions">
+
+<button id="pdfBtn">Download PDF</button>
+<button id="imgBtn">Download Image</button>
+<button id="copyBtn">Copy</button>
+<button id="clearBtn">Clear</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
